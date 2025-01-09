@@ -1,0 +1,25 @@
+{
+    "id": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-testazurepolicy/providers/Microsoft.Authorization/policyAssignments/ada0f4a34b09cf6ad704cc62",
+    "type": "Microsoft.Authorization/policyAssignments",
+    "name": "ada0f4a34b09cf6ad704cc62",     
+    "properties": {
+        "description": "This initiative audits the presence of a specific tag and its value.",
+        "displayName": "Require a tag and its value",
+        "parameters": {
+            "tagName": {
+              "value": "environment"
+            },
+            "tagValue": {
+              "value": "production"
+            }
+          },
+          "nonComplianceMessages": [
+            {
+              "message": "This resource is not compliant with the policy. Please apply the required tag and its value."
+            }
+          ],
+          "enforcementMode": "Default",
+          "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policySetDefinitions/requite-tag-and-its-value",
+          "scope": "/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/rg-testazurepolicy"
+    }    
+}

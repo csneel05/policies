@@ -1,0 +1,41 @@
+{
+    "id": "/providers/Microsoft.Management/managementGroups/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyDefinitions/requite-tag-and-its-value",
+    "type": "Microsoft.Authorization/policyDefinitions",
+    "name": "requite-tag-and-its-value",
+    "properties": {
+        "displayName": "Require a tag and its value",
+        "policyType": "Custom",
+        "mode": "Indexed",
+        "description": "This policy requires a specific tag and its value.",
+        "metadata": {
+            "category": "Tags"
+        },
+        "parameters": {
+            "tagName": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "Tag Name",
+                    "description": "Name of the tag, such as 'environment'"
+                }
+            },
+            "tagValue": {
+                "type": "String",
+                "metadata": {
+                    "displayName": "Tag Value",
+                    "description": "Value of the tag, such as 'production'"
+                }
+            }
+        }
+        },
+        "policyRule": {
+            "if": {
+                "not": {
+                    "field": "[concat('tags[', parameters('tagName'), ']')]",
+                    "equals": "[parameters('tagValue')]"
+                    }
+                },
+            "then": {
+                "effect": "deny"
+            }
+        }
+    }
