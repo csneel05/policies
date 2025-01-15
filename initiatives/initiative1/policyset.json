@@ -26,7 +26,7 @@
         },
         "policyDefinitions": [
             {
-                "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/00000000-0000-0000-0000-000000000000/providers/Microsoft.Authorization/policyDefinitions/requite-tag-and-its-value",
+                "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/CIS/providers/Microsoft.Authorization/policyDefinitions/requite-tag-and-its-value",
                 "parameters": {
                     "tagName": {
                         "value": "[parameters('tagName')]"
