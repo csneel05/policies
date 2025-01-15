@@ -1,7 +1,7 @@
 {
     "id": "/providers/Microsoft.Management/managementGroups/07ead26b-7cb9-4f92-b18e-468dfdc82a45/providers/Microsoft.Authorization/policySetDefinitions/initiative1",
     
-    "name": "initiative",
+    "name": "initiative1",
     "properties": {
         "displayName": "Initiative 1",
         "description": "This initiative contains a set of policies for testing.",
