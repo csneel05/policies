@@ -19,7 +19,7 @@
             }
           ],
           "enforcementMode": "Default",
-          "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/CIS/providers/Microsoft.Authorization/policySetDefinitions/requite-tag-and-its-value",
+          "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/07ead26b-7cb9-4f92-b18e-468dfdc82a45/providers/Microsoft.Authorization/policySetDefinitions/requite-tag-and-its-value",
           "scope": "/subscriptions/f27ae94d-d5dd-41a9-902b-6fc121faf228/resourceGroups/rg-testazurepolicy"
     }    
 }

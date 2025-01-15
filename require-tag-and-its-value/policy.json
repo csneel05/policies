@@ -1,5 +1,5 @@
 {
-    "id": "/providers/Microsoft.Management/managementGroups/CIS/providers/Microsoft.Authorization/policyDefinitions/requite-tag-and-its-value",
+    "id": "/providers/Microsoft.Management/managementGroups/07ead26b-7cb9-4f92-b18e-468dfdc82a45/providers/Microsoft.Authorization/policyDefinitions/requite-tag-and-its-value",
     "type": "Microsoft.Authorization/policyDefinitions",
     "name": "requite-tag-and-its-value",
     "properties": {
